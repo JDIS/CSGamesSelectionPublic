@@ -14,16 +14,23 @@ Les arcs sont définis par la source, la destination et le prix de déplacement.
 ## Intéraction avec la plateforme
 ### Inputs
 **Ligne 1**: Le nombre de noeud.
+
 **Ligne 2**: Le nombre d'arc `N`.
+
 **Ligne 3**: Le noeud initial.
+
 **Ligne 4**: Le noeud de destination.
+
 **Ligne N**: Les arcs.
 
 ### Output
 Vous devez outputer dans le stdout la list de noeuds parcourus.
+
 **Ligne 1**: Le noeud initial.
-**Ligne 2**: Le second noeud.
-**Ligne 3**: Noeud final.
+
+**Ligne 2 à N**: Les noeuds intermédiaires.
+
+**Ligne N**: Noeud final.
 
 ### Exemple
 **Input**
