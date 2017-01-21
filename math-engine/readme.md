@@ -18,20 +18,18 @@ Comme toute calculatrice qui se respecte, votre API devra respecter les règles 
 
 `(): priorité d'opération`
 
-`^: puissance d'un chiffre`
-
 Voici le format des objets JSON:
 ```
 {
   operators: [
 	{
 		type: 'string' || 'number',
-		content: '+' || '-' || '/' || '*' || '(' || ')' || '^' || 12355224637547
+		content: '+' || '-' || '/' || '*' || '(' || ')' || 12355224637547
 		position: chiffre représentant la position du chiffre ou de l'opérateur dans l'équation mathématique (débute à 0)
 	},
 	{
 		type: 'string' || 'number',
-		content: '+' || '-' || '/' || '*' || '(' || ')' || '^' || 12355224637547
+		content: '+' || '-' || '/' || '*' || '(' || ')' || 12355224637547
 		position: chiffre représentant la position du chiffre ou de l'opérateur dans l'équation mathématique (débute à 0)
 	} ...
   ]
