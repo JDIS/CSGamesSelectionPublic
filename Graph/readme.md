@@ -9,7 +9,7 @@ Les noeuds sont indiqués par des chiffres commençants à 0 et terminant au nom
 Les arcs sont définis par la source, la destination et le prix de déplacement. À noter, les arcs sont 
 **unidirectionnels**.
 
-[Graph]: https://github.com/carapas/CSGamesSelectionPublic/blob/master/Graph/graph.png "Graph"
+[Graph]: https://github.com/carapas/CSGamesSelectionPublic/blob/master/Graph/graph.png?raw=true "Graph"
 
 ## Intéraction avec la plateforme
 ### Inputs
