@@ -1,5 +1,6 @@
 "use strict";
 var Tester = require('./tester');
+var fs = require('fs');
 
 var args = process.argv.slice(2);
 if (args.length != 2) {
@@ -9,7 +10,8 @@ if (args.length != 2) {
 }
 
 var script = args[0];
-var validator = require(`./${args[1]}`);
+var jsonstring = fs.readFileSync(`./${args[1]}`);
+var validator = JSON.parse(jsonstring);
 
 var bin = script.split('.')[1] == 'js' ? 'node': 'python';
 var tester = new Tester(script, bin);

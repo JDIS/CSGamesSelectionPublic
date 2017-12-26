@@ -1,0 +1,7 @@
+{"timeAllowed": 2, "points": 4, "category": "Reverse", "isCodingChallenge": true, "tests": [
+	{"name": "Easy", "inputs": ["1"], "outputs": ["2"]},
+	{"name": "Medium", "inputs": ["1,2,3"], "outputs": ["30"]},
+  {"name": "Saignant", "inputs": ["2,4,10"], "outputs": ["609"]},
+  {"name": "Interesting", "inputs": ["2"], "outputs": ["3"]},
+  {"name": "HowCanThisBe?", "inputs": ["1,2"], "outputs": ["6"]}]
+}

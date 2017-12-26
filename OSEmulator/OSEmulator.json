@@ -1,0 +1,20 @@
+{"timeAllowed": 2, "points": 8, "category": "OS", "isCodingChallenge": true, "tests": [
+	{"name": "Exemple", "inputs": ["9",
+                             "MOV a 3",
+                             "XOR a 1",
+                             "SUB a 2",
+                             "MOV b 2",
+                             "MOV c 3",
+                             "XOR b c",
+                             "MOV d 1",
+                             "ADD d 2",
+                             "SUB c 1"], "outputs": ["0","1","2","3"]}, 
+  {"name": "Jumping", "inputs": ["7",
+                            "MOV c 40",
+                            "MOV a 10",
+                            "ADD b 1",
+                            "SUB c 2",
+                            "CMP a b",
+                            "JNE 2",
+                            "XOR a a"], "outputs": ["0","10","20","0"]}] 
+}
