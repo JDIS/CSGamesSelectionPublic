@@ -4,7 +4,7 @@ Le validator vous permet de tester vos scripts avec des scénarios de test sembl
 Vous pourrez donc tester facilement vos scripts en local!
 
 ## Comment?
-Pour ce faire, vous devrez importer un fichier de validation situé sur [github](https://github.com/FelixMartel/CSGamesSelectionPublic).
+Pour ce faire, vous devrez importer un fichier de validation situé sur [github](https://github.com/JDIS/CSGamesSelectionPublic).
 Et vous devrez écrire un script qui remplit les objectifs du défi.
 
 Une fois prêt, vous n'avez qu'à rouler le validator comme suit:

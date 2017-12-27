@@ -6,7 +6,7 @@ Bienvenu aux sélections des CS Games. Dans cette compétition, vous aurez à co
 Votre but est de résoudre le plus de challenges possibles pour obtenir un maximum de force!
 Chaque challenge dispose d'un nombre de force différent dépendemment de la difficulté du challenge.
 
-![alt text](https://raw.githubusercontent.com/carapas/CSGamesSelectionPublic/master/force.png?token=AEjGqx5J_Qeapc7dPXs_OE9rb82BrLaMks5Yfi7hwA "Force")
+![alt text](https://raw.githubusercontent.com/JDIS/CSGamesSelectionPublic/master/force.png?token=AEjGqx5J_Qeapc7dPXs_OE9rb82BrLaMks5Yfi7hwA "Force")
 
 ## Comment ça marche?
 Les défis de programmation sont de type stdin et stdout. C'est à dire que vous lirez les inputs à partir des entrées de la console et que vous envoierez les résultats de vos algorithmes par stdout.
