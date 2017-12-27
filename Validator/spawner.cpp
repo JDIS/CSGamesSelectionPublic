@@ -8,7 +8,7 @@
 
 using json = nlohmann::json;
 
-json spawn(std::string program, std::string arg, json ins, int timeout)
+json spawn(std::string program, std::string arg, json ins, int timeout_millis)
 {
   json res = {{"isSuccess", false}, {"isTimeout", false}, {"streams", {}}};
   int pipe_to_child[2];
@@ -84,7 +84,8 @@ json spawn(std::string program, std::string arg, json ins, int timeout)
     std::move(f)
     ).detach();
 
-    if(f_completes.wait_until(std::chrono::system_clock::now() + std::chrono::milliseconds(1000*timeout)) == std::future_status::ready)
+    auto end = std::chrono::system_clock::now() + std::chrono::milliseconds(timeout_millis);
+    if(f_completes.wait_until(end) == std::future_status::ready)
     {
       res["streams"] = f_completes.get();
       res["isSuccess"] = true;

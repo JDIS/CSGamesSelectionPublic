@@ -5,7 +5,6 @@
 
 #include "json.hpp"
 
-
 using json = nlohmann::json;
 
 json spawn(std::string program, std::string arg, json in, int timeout);
@@ -19,11 +18,25 @@ json test(std::string script, json chall)
   int successCount = 0;
   for_each(chall["tests"].begin(), chall["tests"].end(), [&chall, &result, &successCount, bin, script](json test) {
     json res = spawn(bin, script, test["inputs"], chall["timeAllowed"].get<int>()*1000);
-    res["isSuccess"] = res["isSuccess"].get<bool>() && test["outputs"] == res["streams"]["stdout"];
+    res["isSuccess"] = res["isSuccess"] && test["outputs"] == res["streams"]["stdout"];
     res["name"] = test["name"];
     result["results"].push_back(res);
     if(res["isSuccess"])
       successCount++;
+
+    if(!(res["isSuccess"] || res["isTimeout"]))
+    {
+      for(auto i = 0; i < test["outputs"].size(); ++i)
+      {
+         std::cout << "expected " << test["outputs"][i];
+         if(i < res["streams"]["stdout"].size())
+           std::cout << " got " << res["streams"]["stdout"][i] << std::endl;
+         else
+           std::cout << " got \"\"" << std::endl;
+      }
+      std::cout << "stderr: " << res["streams"]["stderr"] << std::endl;
+    }
+
   });
 
   result["percent"] = float(successCount)/chall["tests"].size();
@@ -49,7 +62,7 @@ int main(int argc, char**  argv)
   challfile.close();
 
   auto res = test(script, chall);
-  for_each(res["results"].begin(), res["results"].end(), [](json result) {
+  for_each(res["results"].begin(), res["results"].end(), [&chall](json result) {
     auto timeout = result["isTimeout"] ? " timeout" : "";
     auto success = result["isSuccess"] ? "Success" : "Failed";
     std::cout << "Test " << result["name"] << " --- " << success << timeout << std::endl;
