@@ -1,7 +1,53 @@
-{"timeAllowed": 2, "points": 2, "category": "Software", "isCodingChallenge": true, "tests": [
-	{"name": "Simple addition", "inputs": ["{\"operators\":[{\"type\":\"number\",\"content\":3,\"position\":0},{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"string\",\"content\":\"+\",\"position\":1}]}"], "outputs": ["5"]},
-	{"name": "Simple soustraction", "inputs": ["{\"operators\":[{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"number\",\"content\":4,\"position\":0},{\"type\":\"string\",\"content\":\"-\",\"position\":1}]}"], "outputs": ["2"]},
-	{"name": "Simple division", "inputs": ["{\"operators\":[{\"type\":\"number\",\"content\":4,\"position\":0},{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"string\",\"content\":\"\/\",\"position\":1}]}"], "outputs": ["2"]},
-	{"name": "Simple multiplication", "inputs": ["{\"operators\":[{\"type\":\"number\",\"content\":4,\"position\":0},{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"string\",\"content\":\"*\",\"position\":1}]}"], "outputs": ["8"]},
-	{"name": "Simple ordre des opérations", "inputs": ["{\"operators\":[{\"type\":\"string\",\"content\":\"(\",\"position\":0},{\"type\":\"number\",\"content\":1,\"position\":1},{\"type\":\"string\",\"content\":\"+\",\"position\":2},{\"type\":\"number\",\"content\":5,\"position\":3},{\"type\":\"string\",\"content\":\")\",\"position\":4},{\"type\":\"string\",\"content\":\"\/\",\"position\":5},{\"type\":\"number\",\"content\":3,\"position\":6}]}"], "outputs": ["2"]}
-]}
+{
+    "category": "Software",
+    "isCodingChallenge": true,
+    "points": 2,
+    "tests": [
+        {
+            "inputs": [
+                "{\"operators\":[{\"type\":\"number\",\"content\":3,\"position\":0},{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"string\",\"content\":\"+\",\"position\":1}]}"
+            ],
+            "name": "Simple addition",
+            "outputs": [
+                "5"
+            ]
+        },
+        {
+            "inputs": [
+                "{\"operators\":[{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"number\",\"content\":4,\"position\":0},{\"type\":\"string\",\"content\":\"-\",\"position\":1}]}"
+            ],
+            "name": "Simple soustraction",
+            "outputs": [
+                "2"
+            ]
+        },
+        {
+            "inputs": [
+                "{\"operators\":[{\"type\":\"number\",\"content\":4,\"position\":0},{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"string\",\"content\":\"/\",\"position\":1}]}"
+            ],
+            "name": "Simple division",
+            "outputs": [
+                "2"
+            ]
+        },
+        {
+            "inputs": [
+                "{\"operators\":[{\"type\":\"number\",\"content\":4,\"position\":0},{\"type\":\"number\",\"content\":2,\"position\":2},{\"type\":\"string\",\"content\":\"*\",\"position\":1}]}"
+            ],
+            "name": "Simple multiplication",
+            "outputs": [
+                "8"
+            ]
+        },
+        {
+            "inputs": [
+                "{\"operators\":[{\"type\":\"string\",\"content\":\"(\",\"position\":0},{\"type\":\"number\",\"content\":1,\"position\":1},{\"type\":\"string\",\"content\":\"+\",\"position\":2},{\"type\":\"number\",\"content\":5,\"position\":3},{\"type\":\"string\",\"content\":\")\",\"position\":4},{\"type\":\"string\",\"content\":\"/\",\"position\":5},{\"type\":\"number\",\"content\":3,\"position\":6}]}"
+            ],
+            "name": "Simple ordre des op\u00e9rations",
+            "outputs": [
+                "2"
+            ]
+        }
+    ],
+    "timeAllowed": 2
+}

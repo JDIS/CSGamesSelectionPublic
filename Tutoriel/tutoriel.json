@@ -1,3 +1,15 @@
-{"timeAllowed": 2, "points": 1, "category": "Tutoriel", "isCodingChallenge": true, "tests": [
-	{"name": "Bonne chance!", "inputs": [], "outputs": ["J'ai compris!"]}
-]}
+{
+    "category": "Tutoriel",
+    "isCodingChallenge": true,
+    "points": 1,
+    "tests": [
+        {
+            "inputs": [],
+            "name": "Bonne chance!",
+            "outputs": [
+                "J'ai compris!"
+            ]
+        }
+    ],
+    "timeAllowed": 2
+}

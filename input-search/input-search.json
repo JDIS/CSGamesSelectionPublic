@@ -1,5 +1,40 @@
-{"timeAllowed": 5, "points": 8, "category": "Reverse", "isCodingChallenge": true, "tests": [
-	{"name": "Exemple", "inputs": ["0x45cffe10"], "outputs": ["ab","cb"]},
-	{"name": "Overflow test", "inputs": ["0x63cdfe10"], "outputs": ["f1","h1","eq","gq"]},
-	{"name": "Random test", "inputs": ["0xc5cffe10"], "outputs": ["bb", "db"]}
-]}
+{
+    "category": "Reverse",
+    "isCodingChallenge": true,
+    "points": 8,
+    "tests": [
+        {
+            "inputs": [
+                "0x45cffe10"
+            ],
+            "name": "Exemple",
+            "outputs": [
+                "ab",
+                "cb"
+            ]
+        },
+        {
+            "inputs": [
+                "0x63cdfe10"
+            ],
+            "name": "Overflow test",
+            "outputs": [
+                "f1",
+                "h1",
+                "eq",
+                "gq"
+            ]
+        },
+        {
+            "inputs": [
+                "0xc5cffe10"
+            ],
+            "name": "Random test",
+            "outputs": [
+                "bb",
+                "db"
+            ]
+        }
+    ],
+    "timeAllowed": 5
+}
