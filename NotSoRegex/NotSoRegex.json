@@ -1,0 +1,158 @@
+{
+    "category": "parsing",
+    "isCodingChallenge": true,
+    "points": 10,
+    "tests": [
+        {
+            "inputs": [
+                "a",
+                "b"
+            ],
+            "name": "Erreur simple",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
+                "asd123",
+                "asd123"
+            ],
+            "name": "Lettres et nombres",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "asd123",
+                "asd12"
+            ],
+            "name": "Lettres et nombres avec erreur",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
+                "1(2(3)4)",
+                "1234"
+            ],
+            "name": "Groupes",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "1(2(3)4",
+                "1234"
+            ],
+            "name": "Groupes non fermés",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
+                "a*(abc)",
+                "a"
+            ],
+            "name": "* aucun",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "a*(abc)",
+                "aabcabc"
+            ],
+            "name": "* multiple",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "a?(abc)",
+                "a"
+            ],
+            "name": "? aucun",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "a?(abc)",
+                "aabc"
+            ],
+            "name": "? un",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "a?(abc)",
+                "aabcabc"
+            ],
+            "name": "? multiple",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
+                "a+(abc)",
+                "aabc"
+            ],
+            "name": "+ un",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "a+(abc)",
+                "aabcabc"
+            ],
+            "name": "+ multiple",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "a+(abc)",
+                "a"
+            ],
+            "name": "+ zéro",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
+                "+(bc?a*(bb?(dd)b))",
+                "bcbbbbbbbca"
+            ],
+            "name": "Complexe",
+            "outputs": [
+                true
+            ]
+        },
+        {
+            "inputs": [
+                "+a+",
+                "bcbbbbbbbca"
+            ],
+            "name": "Modificateur superflu",
+            "outputs": [
+                false
+            ]
+        }
+    ],
+    "timeAllowed": 2
+}
