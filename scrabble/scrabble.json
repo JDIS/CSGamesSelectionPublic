@@ -527,5 +527,7 @@
             ]
         }
     ],
-    "timeAllowed": 2
+    "timeAllowed": 2,
+    "python": "N = int(raw_input())\nfor i in xrange(N):\n  word = raw_input()\nletters = raw_input()\n",
+    "javascript": "var readline = require(\"./readline.js\");\n\nvar N = parseInt(readline());\nfor(var i = 0; i < N; ++i) {\nvar word = readline();\n}\nvar letters = readline();\n"
 }

@@ -49,5 +49,7 @@
             ]
         }
     ],
-    "timeAllowed": 2
+    "timeAllowed": 2,
+    "python": "jsonString = raw_input()\n",
+    "javascript": "var readline = require(\"./readline.js\");\n\n};\nvar jsonString = readline();\n"
 }

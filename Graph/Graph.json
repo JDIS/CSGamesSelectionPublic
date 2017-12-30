@@ -64,5 +64,7 @@
             ]
         }
     ],
-    "timeAllowed": 2
+    "timeAllowed": 2,
+    "python": "nb_nodes = int(raw_input())\nnb_arcs = int(raw_input())\ninitial_node = int(raw_input())\nfinal_node = int(raw_input())\narcs = []\nfor i in xrange(nb_arcs):\n   arcs.append(raw_input().replace(\"\\n\", \"\").replace(\"\\r\", \"\"))\n",
+    "javascript": "var readline = require(\"./readline.js\");\n\nvar nbNodes = parseInt(readline())\nvar nbArcs = parseInt(readline())\nvar initialNode = parseInt(readline())\nvar finalNode = parseInt(readline())\nvar arcs = []\nfor(var i=0; i < nbArcs; i++) {\n  arcs.push(readline());\n}\n"
 }

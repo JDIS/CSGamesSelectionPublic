@@ -13,5 +13,7 @@
             ]
         }
     ],
-    "timeAllowed": 2
+    "timeAllowed": 2,
+    "python": "cipher = raw_input()",
+    "javascript": "var readline = require(\"./readline.js\");\n\nvar cipher = readline();"
 }

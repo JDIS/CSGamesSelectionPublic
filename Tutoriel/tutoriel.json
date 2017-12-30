@@ -11,5 +11,7 @@
             ]
         }
     ],
-    "timeAllowed": 2
+    "timeAllowed": 2,
+    "python": "print \"Pas compris!\"",
+    "javascript": "console.log(\"Pas compris!\");"
 }

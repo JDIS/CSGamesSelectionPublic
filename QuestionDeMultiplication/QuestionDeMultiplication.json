@@ -49,5 +49,7 @@
             ]
         }
     ],
-    "timeAllowed": 2
+    "timeAllowed": 2,
+    "python": "csv = raw_input()\n",
+    "javascript": "var readline = require(\"./readline.js\");\n\nvar csv = readline();\n"
 }

@@ -36,5 +36,7 @@
             ]
         }
     ],
-    "timeAllowed": 5
+    "timeAllowed": 5,
+    "python": "ecx = raw_input()\n",
+    "javascript": "var readline = require(\"./readline.js\");\n\nvar ecx = readline();\n"
 }
