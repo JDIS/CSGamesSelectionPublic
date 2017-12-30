@@ -25,7 +25,7 @@ input2 = raw_input()
 
 **javascript**
 ```
-var readline = require(\"./readline.js\");
+var readline = require("./readline.js");
 
 var input1 = readline();
 var input2 = readline();
