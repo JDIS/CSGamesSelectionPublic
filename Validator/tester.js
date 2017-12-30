@@ -1,5 +1,6 @@
 "use strict";
 var spawnSync = require('child_process').spawnSync;
+var os = require('os');
 
 class Tester {
 	constructor(path, bin) {
@@ -31,7 +32,7 @@ class Tester {
 		this.test.tests.forEach(test => {
 			let options = {
 				timeout: this.test.timeAllowed*1000,
-				input: test.inputs.join('\r\n'),
+				input: test.inputs.join(os.EOL),
 				encoding: 'utf-8'
 			}
 			let res = spawnSync(this.bin, [this.path], options);
