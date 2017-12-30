@@ -1,18 +1,19 @@
 # Not So Regex
-Votre collègue aimerait pouvoir télécharger l'Internet et être capable d'y trouer
-toutes les numéros de cartes de crédits contenus. Pour se faire il vous demande
-de produire un programme étant capable de trouver des chaines de caractères selon
-un patron. Il ne veut pas que vous utilisiez des méthodes utilisant des REGEX
-puisque ces derniers sont trop lent pour pouvoir interpréter tout l'Internet.
+Votre collègue aimerait pouvoir télécharger l'Internet et être capable d'y
+trouver tous les numéros de cartes de crédits contenus. Pour ce faire il vous
+demande de produire un programme étant capable de trouver des chaines de
+caractères selon un patron. Il ne veut pas que vous utilisiez des méthodes
+utilisant des REGEX puisque ces dernières sont trop lentes pour pouvoir
+interpréter tout l'Internet.
 
 La première valeur sera l'expression et la deuxième sera la chaine de caractères
 à tester. Si les deux concordent vous devrez retourner un `true` sinon un
 `false`.
 
-Si le l'expression contient une erreur, vous devez retourner un `false`.
+Si l'expression contient une erreur, vous devez retourner un `false`.
 
-Ce code de ce numéro sera relut par un humain pour être certain qu'aucun REGEX ou
-équivalent n'a été utilisé. En cas de doûte, vennez nous poser la question.
+Le code de ce numéro sera relu par un humain pour être certain qu'aucun REGEX ou
+équivalent n'a été utilisé. En cas de doûte, venez nous poser la question.
 
 ## Niveau 1
 - Lettres
