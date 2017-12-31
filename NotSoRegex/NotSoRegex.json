@@ -55,6 +55,16 @@
         },
         {
             "inputs": [
+                "**a",
+                "a"
+            ],
+            "name": "Double operateur",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
                 "a*(abc)",
                 "a"
             ],
