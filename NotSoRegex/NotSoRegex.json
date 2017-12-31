@@ -15,6 +15,26 @@
         },
         {
             "inputs": [
+                "",
+                "b"
+            ],
+            "name": "Regex vide",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
+                "a",
+                ""
+            ],
+            "name": "Chaine vide",
+            "outputs": [
+                false
+            ]
+        },
+        {
+            "inputs": [
                 "asd123",
                 "asd123"
             ],
