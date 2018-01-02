@@ -1,6 +1,13 @@
 # Not So Regex
+
+## Attention
+Ce défi vaut beaucoup de points, mais peut être **très** long à compléter. Il
+vous est conseillé de vous assurer de votre compréhension du problème avant de
+tenter de le compléter. Par contre, il est possible de rapidement aller chercher
+quelques points sans tout compléter.
+
 Votre collègue aimerait pouvoir télécharger l'Internet et être capable d'y
-trouver tous les numéros de cartes de crédits contenus. Pour ce faire il vous
+trouver tous les numéros de cartes de crédits. Pour ce faire, il vous
 demande de produire un programme étant capable de trouver des chaines de
 caractères selon un patron. Il ne veut pas que vous utilisiez des méthodes
 utilisant des REGEX puisque ces dernières sont trop lentes pour pouvoir
@@ -32,15 +39,15 @@ Le code de ce numéro sera relu par un humain pour être certain qu'aucun REGEX 
 Les modificateurs sont de type préfixe. Ceci veut dire que la modification
 s'applique sur le caractère suivant ou le groupe suivant.
 
-Pour s'implifier votre tâche, les modificateurs sont de type [possessif]
+Pour simplifier votre tâche, les modificateurs sont de type [possessif]
 (https://www.regular-expressions.info/possessive.html). Ceci veut dire que si
-vous trouvez une partie de chaine fonctionnelle, vous ne devrez jamais "redonner"
-cette partie de chaine. Il est conseillé d'aller lire l'article 
+vous trouvez une partie de chaine fonctionnelle, vous ne devrez jamais
+« redonner » cette partie de chaine. Il est conseillé d'aller lire l'article
 https://www.regular-expressions.info/possessive.html.
 
-- `*`, n'importe combien d'occurence
+- `*`, 0 ou plus d'occurrences
 - `?`, 0 ou 1
-- `+`, plus de zero occurence
+- `+`, au moins une occurrence
 
 **Exemple**
 - `*a` ~= ` `
