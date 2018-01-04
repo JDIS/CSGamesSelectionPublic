@@ -4,7 +4,9 @@
 Ce défi vaut beaucoup de points, mais peut être **très** long à compléter. Il
 vous est conseillé de vous assurer de votre compréhension du problème avant de
 tenter de le compléter. Par contre, il est possible de rapidement aller chercher
-quelques points sans tout compléter.
+quelques points sans tout compléter. Pour vous simplifier la vie, ce défi ne
+demande que des true/false. Alors, il vous est demandé de ne pas simplement
+retourner des valeurs stupides en espérant recevoir 50% des points.
 
 Votre collègue aimerait pouvoir télécharger l'Internet et être capable d'y
 trouver tous les numéros de cartes de crédits. Pour ce faire, il vous
