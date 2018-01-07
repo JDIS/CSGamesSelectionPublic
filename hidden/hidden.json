@@ -1,0 +1,26 @@
+{
+    "category": "Software",
+    "isCodingChallenge": true,
+    "points": 2,
+    "tests": [
+        {
+            "inputs": [
+                "⒜ is not a simple a with parenthesis"
+            ],
+            "name": "A latin avec parenthèses",
+            "outputs": [
+                " is not a simple a with parenthesis"
+            ]
+        },
+        {
+            "inputs": [
+                "if true ❴ i + 1 ❵"
+            ],
+            "name": "Accolades",
+            "outputs": [
+                "if true  i + 1 "
+            ]
+        }
+    ],
+    "timeAllowed": 2
+}
