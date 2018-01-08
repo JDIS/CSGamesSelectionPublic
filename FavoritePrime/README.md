@@ -14,7 +14,7 @@ Bonjour cher hacker, grâce à un backdoor que nous avons inséré dans les CPUs
 Intel, nous avons réussi à lire un peu de mémoire de la machine d'une importante
 cible dont l'identité restera confidentielle.
 
-Grâce au fabuleux travail que vous avez effectuez sur `NotSoRegex`, nous avons
+Grâce au fabuleux travail que vous avez effectué sur `NotSoRegex`, nous avons
 réutilisé votre engin pour trouver des informations intéressantes dans la
 mémoire de la cible (nous avons effacé les parties où la mémoire semblait
 corrompue):
