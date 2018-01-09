@@ -20,6 +20,24 @@
             "outputs": [
                 "if true  i + 1 "
             ]
+        },
+        {
+            "inputs": [
+                "IT MIGHT ßE A NORMAL SENTENCE"
+            ],
+            "name": "Presqu'un B",
+            "outputs": [
+                "IT MIGHT E A NORMAL SENTENCE"
+            ]
+        },
+        {
+            "inputs": [
+                "1 ̸ 3 ̵ 2 = 5"
+            ],
+            "name": "Un peu plus mathématique",
+            "outputs": [
+                "1  3  2 = 5"
+            ]
         }
     ],
     "timeAllowed": 2
