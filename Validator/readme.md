@@ -9,6 +9,8 @@ Et vous devrez écrire un script qui remplit les objectifs du défi.
 
 Une fois prêt, vous n'avez qu'à rouler validator.js comme suit:
 
-`node validator.js <script file> <validation file>`
+`node validator.js <command> <validation file>`
+
+Par exemple, `node validator.js "python solution.py" defi.json`
 
 Si vous n'avez pas node d'installé, essayez le [validateur natif](https://github.com/JDIS/CSGamesSelectionPublic/tree/master/NativeValidator).

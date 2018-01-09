@@ -9,12 +9,14 @@ if (args.length != 2) {
 	return;
 }
 
-var script = args[0];
+var command = args[0].split(' ');
 var jsonstring = fs.readFileSync(`./${args[1]}`);
 var validator = JSON.parse(jsonstring);
 
-var bin = script.split('.')[1] == 'js' ? 'node': 'python';
-var tester = new Tester(script, bin);
+
+var program = command[0]
+var arg = command.length > 1? command[1] : ""
+var tester = new Tester(arg, program);
 tester.setTest(validator);
 var res = tester.run();
 for(var result of res.results) {

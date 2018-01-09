@@ -9,4 +9,6 @@ Et vous devrez écrire un script qui remplit les objectifs du défi.
 
 Une fois prêt, vous n'avez qu'à rouler le validator comme suit:
 
-`./validator <script file> <validation file>`
+`./validator <command> <validation file>`
+
+Par exemple, `./validator "python solution.py" defi.json`

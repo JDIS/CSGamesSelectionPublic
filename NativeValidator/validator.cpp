@@ -9,15 +9,20 @@ using json = nlohmann::json;
 
 json spawn(std::string program, std::string arg, json in, int timeout);
 
-json test(std::string script, json chall)
+json test(std::string command, json chall)
 {
-  std::string bin = "node";
-  if(script.find(".js") == std::string::npos)
-    bin = "python";
+  std::string arg = "";
+  std::string program = command;
+  size_t pos = command.find(" "); 
+  if(pos != std::string::npos) {
+    program = command.substr(0, pos);
+    arg = command.substr(pos+1);
+  }
+
   json result = {{"results", {}}};
   int successCount = 0;
-  for_each(chall["tests"].begin(), chall["tests"].end(), [&chall, &result, &successCount, bin, script](json test) {
-    json res = spawn(bin, script, test["inputs"], chall["timeAllowed"].get<int>()*1000);
+  for_each(chall["tests"].begin(), chall["tests"].end(), [&chall, &result, &successCount, program, arg](json test) {
+    json res = spawn(program, arg, test["inputs"], chall["timeAllowed"].get<int>()*1000);
     res["isSuccess"] = res["isSuccess"] && test["outputs"] == res["streams"]["stdout"];
     res["name"] = test["name"];
     result["results"].push_back(res);
@@ -47,7 +52,7 @@ int main(int argc, char**  argv)
 {
   if(argc != 3)
   {
-    std::cerr << argv[0] << " <script file> <validation file>" << std::endl;
+    std::cerr << argv[0] << " \"<command>\" <validation file>" << std::endl;
     return 1;
   }
   if(std::string(argv[2]).find(".json") < 0)
