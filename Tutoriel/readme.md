@@ -1,6 +1,6 @@
 # Tutoriel
 ## Sélection des CS Games
-Bienvenu aux sélections des CS Games. Dans cette compétition, vous aurez à résoudre quelques défis en utilisant les langages de programmation disponibles sur cette plateforme.
+Bienvenue aux sélections des CS Games. Dans cette compétition, vous aurez à résoudre quelques défis en utilisant les langages de programmation disponibles sur cette plateforme.
 
 Voici quelques suggestions :
   - [Python 2.7](https://www.python.org/downloads/release/python-2714/)
