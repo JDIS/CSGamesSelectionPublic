@@ -1,29 +1,35 @@
 # Tutoriel
 ## Sélection des CS Games
-Bienvenu aux sélections des CS Games. Dans cette compétition, vous aurez à coder des scripts en [python 2.7](https://www.python.org/downloads/release/python-2713/) et [javascript (nodejs v9.3.0)](https://nodejs.org/en/blog/release/v9.3.0/) et à trouver des flags.
+Bienvenu aux sélections des CS Games. Dans cette compétition, vous aurez à résoudre quelques défis en utilisant les langages de programmation disponibles sur cette plateforme.
+
+Voici quelques suggestions :
+  - [Python 2.7](https://www.python.org/downloads/release/python-2714/)
+  - [Python 3.6](https://www.python.org/downloads/release/python-364/)
+  - [JavaScript (Node.js v9.3.0)](https://nodejs.org/en/blog/release/v9.3.0/)
+  - [Ruby (2.5.0)](https://www.ruby-lang.org/en/news/2017/12/25/ruby-2-5-0-released/)
 
 ## Le but
-Votre but est de résoudre le plus de challenges possibles pour obtenir un maximum de force!
-Chaque challenge dispose d'un nombre de force différent dépendemment de la difficulté du challenge.
+Votre but est de résoudre le plus de défis possibles pour obtenir un maximum de «force».
+Chaque challenge offre un nombre de force différent selon la difficulté du défi.
 
 ![alt text](https://raw.githubusercontent.com/JDIS/CSGamesSelectionPublic/master/force.png "Force")
 
 ## Comment ça marche?
-Les défis de programmation sont de type stdin et stdout. C'est à dire que vous lirez les inputs à partir des entrées de la console et que vous envoierez les résultats de vos algorithmes par stdout.
+Les défis de programmation sont de type _stdin_/_stdout_. Autrement dit, vous lirez les entrées fournies sur l'entrée standard de la console (_stdin_), et vous enverrez les résultats de vos algorithmes sur la sortie standard (_stdout_).
 
-## Tester localement (**Extremement utile**)
-Vous avez accès à un script utilitaire qui agit exactement comme le serveur. Le [Validator](https://github.com/JDIS/CSGamesSelectionPublic/tree/master/Validator) vous permet de tester les challenges que vous voulez localement. Pour ce faire, vous devez lui fournir un script et fichier de test comme [celui-ci](https://github.com/JDIS/CSGamesSelectionPublic/blob/master/Tutoriel/tutoriel.json).
+## Pour tester localement (**extrêmement utile**)
+Vous avez accès à un script utilitaire qui agit exactement comme la plateforme, mais localement : le [Validator](https://github.com/JDIS/CSGamesSelectionPublic/tree/master/Validator) vous permet ainsi de tester les défis que vous voulez localement. Pour ce faire, vous devez lui fournir un script et fichier de test comme [celui-ci](https://github.com/JDIS/CSGamesSelectionPublic/blob/master/Tutoriel/tutoriel.json).
 
-Tous les fichiers sont disponible sur le [github publique des sélections](https://github.com/JDIS/CSGamesSelectionPublic).
+Tous les fichiers nécessaires sont disponibles sur le [dépôt GitHub public de cet événement](https://github.com/JDIS/CSGamesSelectionPublic).
 
 ### stdin
-**python**
+**Python**
 ```
 input1 = raw_input()
 input2 = raw_input()
 ```
 
-**javascript**
+**JavaScript**
 ```
 var readline = require("./readline.js");
 
@@ -32,17 +38,17 @@ var input2 = readline();
 ```
 
 ### stdout
-**python**
+**Python**
 ```
 print 'Resultat'
 ```
 
-**javascript**
+**JavaScript**
 ```
 console.log('Resultat');
 ```
 
 ## Tutoriel
-Pour finir ce tutoriel, vous n'avez qu'à printer `J'ai compris!`.
+Pour compléter ce défi tutoriel, vous n'avez qu'à sortir `J'ai compris!` sur la sortie standard (_stdout_).
 
-# Bonne chance et que la force soit avec vous!
+# Bonne chance, et que la force soit avec vous!

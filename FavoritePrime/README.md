@@ -2,15 +2,15 @@
 
 > My favorite prime is huge. HUUUUUUUGE.
 > 
-> ....Actually, throughout my life, my two greatest assets have been prime
+> .... Actually, throughout my life, my two greatest assets have been prime
 > number stability and being, like, really smart. Crooked Intel also played
 > these cards very hard and, as everyone knows, went down in flames. I went from
 > VERY successful programmer, to top ringzer0 hacker to self-proclaimed crypto
 > expert (on my first try). I think that would qualify as not smart, but
-> genius....and a very stable genius at that!
+> genius.... and a very stable genius at that!
 
 ## Interception
-Bonjour cher hacker, grâce à un backdoor que nous avons inséré dans les CPUs
+Bonjour cher hacker. Grâce à un backdoor que nous avons inséré dans les CPUs
 Intel, nous avons réussi à lire un peu de mémoire de la machine d'une importante
 cible dont l'identité restera confidentielle.
 
@@ -80,4 +80,4 @@ Encrypted message:
 ```
 
 ## Solution
-Nous recherchons une chaine de caractères sous la forme `FLAG-[hexadecimal]`.
+Nous recherchons une chaîne de caractères sous la forme `FLAG-[hexadecimal]`.

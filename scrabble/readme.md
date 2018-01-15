@@ -1,10 +1,13 @@
 # Scrabble
 ## Le but
-Au scrabble, chaque joueur pige 7 lettres, puis avec ces 7 lettres le joueur doit tenter de faire un maximum de points en mettant un mot valide sur la grille.
-Par exemple, avec les lettres `norjubo` vous pouvez faire les mots suivant : `bon`, `jour`, `bonjour`, `job`, etc.
+Au Scrabble, chaque joueur pige 7 lettres, puis avec ces 7 lettres le joueur doit tenter de faire un maximum de points en plaçant un mot valide sur la grille.
+Par exemple, avec les lettres `norjubo` vous pouvez faire les mots suivants : `bon`, `jour`, `bonjour`, `job`, etc.
 L’objectif est de trouver le mot qui fait le plus de points.
 
 ## Règles
+
+Certaines lettres valent plus de points que d'autres.
+
 e,a,i,o,n,r,t,l,s,u = 1 points
 
 d,g = 2 points
@@ -19,19 +22,20 @@ j,x = 8 points
 
 q,z, = 10 points
 
-Donc le mot `jour` vaut 8+1+1+1 = 11 points.
+Par exemple, le mot `jour` vaut 8+1+1+1 = 11 points.
 
-## Intéraction avec la plateforme
+## Interaction avec la plateforme
 ### Inputs
 **Ligne 1**: Le nombre `N` de mots dans le dictionnaire.
 
 **`N` lignes suivantes**: Les mots du dictionnaire. Un par ligne.
 
-**Dernière ligne**: Les 7 lettres de votre jeux.
+**Dernière ligne**: Les 7 lettres de votre jeu.
 
 ### Output
-Vous devez outputer dans le stdout le mot qui vaut le plus de points que vous pouvez jouer à partir de votre jeux.
-**Si deux mots ont le même score, alors le mot à outputter sera lui qui est en premier dans le dictionnaire.**
+Sur la sortie standard (_stdout_), vous devez sortir le mot qui vaut le plus de points (valide selon votre jeu, bien sûr).
+
+**Si deux mots ont le même score, alors le mot à afficher est celui qui est en premier dans le dictionnaire.**
 
 ### Exemple
 **Input**
