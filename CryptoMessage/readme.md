@@ -14,7 +14,7 @@ Votre défi est d'obtenir le message que contient ces ciphers.
 ## Règles
 Puisque c'est un défi de sécurité, il n'y a pas plus d'information que ce qui est décrit dans la mise en situation.
 
-Pour ceux qui n'ont aucune expérience en cryptographie, sachez que **l'algorithme d'encryption est très simple** et ne reflète en rien les algorithmes utilisés en contexte réel.**
+Pour ceux qui n'ont aucune expérience en cryptographie, sachez que **l'algorithme d'encryption est très simple et ne reflète en rien les algorithmes utilisés en contexte réel.**
 
 ## Interaction avec la plateforme
 ### Inputs
