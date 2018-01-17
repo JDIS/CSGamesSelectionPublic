@@ -1,14 +1,14 @@
-# Question De Multiplication
-Dans ce challenge, vous devez déduire de l'algorithme simplement par une multitude d'exemple de d'entrée et sortie.
+# Question de multiplication
+Dans ce challenge, vous devez déduire l'algorithme en utilisant quelques exemples d'entrées et sorties produites par l'algorithme.
 
 Bonne chance!
 
-## Intéraction avec la plateforme
+## Interaction avec la plateforme
 ### Inputs
-**Ligne 1**: Une série de chiffre séparé par des virgules.
+**Ligne 1**: Une série de chiffres séparés par des virgules.
 
 ### Output
-**Ligne 1**: Un nombre quelquonque
+**Ligne 1**: Un nombre quelconque
 
 ### Exemple
 **Input 1**

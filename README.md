@@ -1,4 +1,12 @@
 # CSGamesSelectionPublic
-Contient les fichiers publiques des Sélections des CSGames de Sherbrooke
 
-## Si vous avez des questions n'hésitez pas à nous contacter.
+Contient les fichiers publics pour l'événement de sélection de la délégation sherbrookoise des [CSGames 2018](http://2018.csgames.org/).
+
+## Questions?
+
+Contactez-nous!
+
+- [Slack](https://jdis.slack.com/)
+- [Facebook](https://www.facebook.com/JDISherbrooke)
+- [Site Web](https://jdis.ca/)
+

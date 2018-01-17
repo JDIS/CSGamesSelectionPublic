@@ -1,28 +1,26 @@
 # Not So Regex
 
 ## Attention
+
 Ce défi vaut beaucoup de points, mais peut être **très** long à compléter. Il
-vous est conseillé de vous assurer de votre compréhension du problème avant de
-tenter de le compléter. Par contre, il est possible de rapidement aller chercher
-quelques points sans tout compléter. Pour vous simplifier la vie, ce défi ne
-demande que des true/false. Alors, il vous est demandé de ne pas simplement
-retourner des valeurs stupides en espérant recevoir 50% des points.
+vous est conseillé de vous assurer que vous comprenez bien le problème avant d'essayer de le compléter. Par contre, il est possible d'aller chercher
+quelques points rapidement sans tout compléter. Pour vous simplifier la vie, ce défi ne
+demande que des valeurs `true`/`false`. On vous demande donc de ne pas simplement
+essayer des valeurs aléatoires en espérant recevoir 50% des points.
 
-Votre collègue aimerait pouvoir télécharger l'Internet et être capable d'y
+Votre collègue aimerait pouvoir télécharger l'Internet (oui oui, au complet!) pour être capable d'y
 trouver tous les numéros de cartes de crédits. Pour ce faire, il vous
-demande de produire un programme étant capable de trouver des chaines de
-caractères selon un patron. Il ne veut pas que vous utilisiez des méthodes
-utilisant des REGEX puisque ces dernières sont trop lentes pour pouvoir
-interpréter tout l'Internet.
+demande de produire un programme étant capable de trouver des chaînes de
+caractères suivant un patron donné. Il ne veut pas que vous utilisiez des méthodes
+utilisant des expressions régulières (aussi connues sous le nom familier _regex_) puisque ces dernières sont trop lentes pour pouvoir interpréter tout l'Internet.
 
-La première valeur sera l'expression et la deuxième sera la chaine de caractères
-à tester. Si les deux concordent vous devrez retourner un `true` sinon un
-`false`.
+La première valeur sera l'expression et la deuxième sera la chaîne de caractères
+à tester. Si les deux concordent, vous devez retourner `true`; sinon, vous devez retourner `false`.
 
-Si l'expression contient une erreur, vous devez retourner un `false`.
+Note: si l'expression contient une erreur, vous devez retourner `false`.
 
-Le code de ce numéro sera relu par un humain pour être certain qu'aucun REGEX ou
-équivalent n'a été utilisé. En cas de doûte, venez nous poser la question.
+Le code de ce numéro sera vérifié par les organisateurs pour assurer qu'aucune regex ou
+technique équivalente n'ont été utilisées. En cas de doute, venez nous voir.
 
 ## Niveau 1
 - Lettres
@@ -38,13 +36,13 @@ Le code de ce numéro sera relu par un humain pour être certain qu'aucun REGEX 
 - `(1(2)` erreur
 
 ## Niveau 2
-Les modificateurs sont de type préfixe. Ceci veut dire que la modification
-s'applique sur le caractère suivant ou le groupe suivant.
+Les modificateurs sont de type «préfixe», ce qui veut dire que la modification
+s'applique sur le caractère suivant (ou le groupe suivant).
 
-Pour simplifier votre tâche, les modificateurs sont de type [possessif]
-(https://www.regular-expressions.info/possessive.html). Ceci veut dire que si
-vous trouvez une partie de chaine fonctionnelle, vous ne devrez jamais
-« redonner » cette partie de chaine. Il est conseillé d'aller lire l'article
+Pour vous simplifier la tâche, les modificateurs sont de type [possessifs]
+(https://www.regular-expressions.info/possessive.html), ce qui veut dire que si
+vous trouvez une partie de chaîne fonctionnelle, vous ne devrez jamais
+«redonner» cette partie de chaîne. Il est conseillé de lire l'article
 https://www.regular-expressions.info/possessive.html.
 
 - `*`, 0 ou plus d'occurrences
