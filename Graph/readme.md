@@ -37,7 +37,7 @@ Vous devez sortir la liste de noeuds parcourus sur la sortie standard (_stdout_)
 4
 4
 0
-2
+3
 0 1 2
 1 2 4
 1 3 5
