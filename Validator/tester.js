@@ -40,7 +40,7 @@ class Tester {
 			console.log(`stdout: ${res.stdout.trim()}`);
 			console.log(`stderr: ${res.stderr.trim()}`);
 			console.log('-----------------------------------');
-			let isSuccess = this.verifyOutput(res.stdout.trim().replace(/\r/g,'').split('\n'), test.outputs)
+			let isSuccess = this.verifyOutput(res.stdout.replace(/\r/g,'').replace(/\n$/, "").split('\n'), test.outputs)
 			let isTimeout = (res.error !== undefined && res.error.code === 'ETIMEDOUT');
 			result.results.push({name: test.name, isSuccess: isSuccess, isTimeout: isTimeout});
 			if (isSuccess) successCount++;
