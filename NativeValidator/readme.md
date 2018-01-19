@@ -12,3 +12,5 @@ Une fois prêt, vous n'avez qu'à rouler le validator comme suit:
 `./validator <command> <validation file>`
 
 Par exemple, `./validator "python solution.py" defi.json`
+
+Ou sur windows, `.\validator.exe "python.exe solution.py" defi.json`
