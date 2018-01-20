@@ -1,6 +1,6 @@
 {
     "category": "Parsing",
-    "isCodingChallenge": true,
+    "isCodingChallenge": "true",
     "points": 10,
     "tests": [
         {
@@ -10,7 +10,7 @@
             ],
             "name": "Erreur simple",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -20,7 +20,7 @@
             ],
             "name": "Regex vide",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -30,7 +30,7 @@
             ],
             "name": "Chaine vide",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -40,7 +40,7 @@
             ],
             "name": "Lettres et nombres",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -50,7 +50,7 @@
             ],
             "name": "Lettres et nombres avec erreur",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -60,7 +60,7 @@
             ],
             "name": "Groupes",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -70,7 +70,7 @@
             ],
             "name": "Groupes non fermés",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -80,7 +80,7 @@
             ],
             "name": "Double operateur",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -90,7 +90,7 @@
             ],
             "name": "* aucun",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -100,7 +100,7 @@
             ],
             "name": "* multiple",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -110,7 +110,7 @@
             ],
             "name": "? aucun",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -120,7 +120,7 @@
             ],
             "name": "? un",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -130,7 +130,7 @@
             ],
             "name": "? multiple",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -140,7 +140,7 @@
             ],
             "name": "+ un",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -150,7 +150,7 @@
             ],
             "name": "+ multiple",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -160,7 +160,7 @@
             ],
             "name": "+ zéro",
             "outputs": [
-                false
+                "false"
             ]
         },
         {
@@ -170,7 +170,7 @@
             ],
             "name": "Complexe",
             "outputs": [
-                true
+                "true"
             ]
         },
         {
@@ -180,7 +180,7 @@
             ],
             "name": "Modificateur superflu",
             "outputs": [
-                false
+                "false"
             ]
         }
     ],
