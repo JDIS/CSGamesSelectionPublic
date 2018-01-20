@@ -5,7 +5,7 @@
     "tests": [
         {
             "inputs": [
-                1,
+                "1",
                 "test",
                 "esttabc"
             ],
@@ -16,7 +16,7 @@
         },
         {
             "inputs": [
-                2,
+                "2",
                 "test",
                 "sett",
                 "esttabc"
@@ -28,7 +28,7 @@
         },
         {
             "inputs": [
-                3,
+                "3",
                 "zup",
                 "wazzup",
                 "pub",
@@ -41,7 +41,7 @@
         },
         {
             "inputs": [
-                477,
+                "477",
                 "fawn",
                 "nunnery",
                 "deferment",
