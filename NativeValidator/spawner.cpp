@@ -179,7 +179,8 @@ json spawn(std::string program, std::string arg, json ins, int timeout_millis)
 	  } while (dwRead == 512);
 	  for (std::string line; std::getline(out, line); )
 	  {
-		  line.pop_back(); // remove \r
+		  if(line[line.length()-1] == '\r')
+		    line.pop_back(); // remove \r
 		  lines.push_back(line);
 	  }
 
