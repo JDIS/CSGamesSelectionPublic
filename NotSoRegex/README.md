@@ -7,12 +7,14 @@ vous est conseillé de vous assurer que vous comprenez bien le problème avant d
 quelques points rapidement sans tout compléter
 
 Votre collègue aimerait pouvoir télécharger l'Internet (oui oui, au complet!) pour être capable d'y
-trouver tous les numéros de cartes de crédits. Pour ce faire, il vous
+trouver tous les numéros de cartes de crédit. Pour ce faire, il vous
 demande de produire un programme étant capable de trouver des chaînes de
 caractères suivant un patron donné. Il ne veut pas que vous utilisiez des méthodes
 utilisant des expressions régulières (aussi connues sous le nom familier _regex_) puisque ces dernières sont trop lentes pour pouvoir interpréter tout l'Internet.
 
-La première ligne sera l'expression, la deuxième ligne sera le nombre de chaine, disons n  les n prochaines lignes seront de chaines àtester.
+La première ligne sera l'expression, la deuxième ligne sera le nombre de chaines (disons n) et les n prochaines lignes seront des chaines à tester.
+
+En sortie, vous ne devez que retourner les chaines qui sont valides pour l'expression donnée.
 
 Par exemple,
 
@@ -27,8 +29,6 @@ Et vous devrez alors écrire sur la sortie standard
 ```
 a
 ```
-
-En sortie, vous ne devez que retourner les chaines qui sont valides pour l'expression donnée.
 
 Note: si l'expression contient une erreur, vous devez retourner `erreur` sur une seule ligne.
 
