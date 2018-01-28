@@ -4,9 +4,7 @@
 
 Ce défi vaut beaucoup de points, mais peut être **très** long à compléter. Il
 vous est conseillé de vous assurer que vous comprenez bien le problème avant d'essayer de le compléter. Par contre, il est possible d'aller chercher
-quelques points rapidement sans tout compléter. Pour vous simplifier la vie, ce défi ne
-demande que des valeurs `true`/`false`. On vous demande donc de ne pas simplement
-essayer des valeurs aléatoires en espérant recevoir 50% des points.
+quelques points rapidement sans tout compléter
 
 Votre collègue aimerait pouvoir télécharger l'Internet (oui oui, au complet!) pour être capable d'y
 trouver tous les numéros de cartes de crédits. Pour ce faire, il vous
@@ -14,10 +12,25 @@ demande de produire un programme étant capable de trouver des chaînes de
 caractères suivant un patron donné. Il ne veut pas que vous utilisiez des méthodes
 utilisant des expressions régulières (aussi connues sous le nom familier _regex_) puisque ces dernières sont trop lentes pour pouvoir interpréter tout l'Internet.
 
-La première valeur sera l'expression et la deuxième sera la chaîne de caractères
-à tester. Si les deux concordent, vous devez retourner `true`; sinon, vous devez retourner `false`.
+La première ligne sera l'expression, la deuxième ligne sera le nombre de chaine, disons n  les n prochaines lignes seront de chaines àtester.
 
-Note: si l'expression contient une erreur, vous devez retourner `false`.
+Par exemple,
+
+```
+a
+2
+a
+b
+```
+
+Et vous devrez alors écrire sur la sortie standard
+```
+a
+```
+
+En sortie, vous ne devez que retourner les chaines qui sont valides pour l'expression donnée.
+
+Note: si l'expression contient une erreur, vous devez retourner `erreur` sur une seule ligne.
 
 Le code de ce numéro sera vérifié par les organisateurs pour assurer qu'aucune regex ou
 technique équivalente n'ont été utilisées. En cas de doute, venez nous voir.

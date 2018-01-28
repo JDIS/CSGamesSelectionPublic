@@ -6,181 +6,128 @@
         {
             "inputs": [
                 "a",
-                "b"
+                "2",
+                "b",
+                "a"
             ],
             "name": "Erreur simple",
             "outputs": [
-                "false"
-            ]
-        },
-        {
-            "inputs": [
-                "",
-                "b"
-            ],
-            "name": "Regex vide",
-            "outputs": [
-                "false"
-            ]
-        },
-        {
-            "inputs": [
-                "a",
-                ""
-            ],
-            "name": "Chaine vide",
-            "outputs": [
-                "false"
+                "a"
             ]
         },
         {
             "inputs": [
                 "asd123",
-                "asd123"
+                "2",
+                "asd123",
+                "asd111"
             ],
             "name": "Lettres et nombres",
             "outputs": [
-                "true"
-            ]
-        },
-        {
-            "inputs": [
-                "asd123",
-                "asd12"
-            ],
-            "name": "Lettres et nombres avec erreur",
-            "outputs": [
-                "false"
+                "asd123"
             ]
         },
         {
             "inputs": [
                 "1(2(3)4)",
+                "2",
+                "2234",
                 "1234"
             ],
             "name": "Groupes",
             "outputs": [
-                "true"
+                "1234"
             ]
         },
         {
             "inputs": [
                 "1(2(3)4",
-                "1234"
+                "2",
+                "1234",
+                "123"
             ],
             "name": "Groupes non fermés",
             "outputs": [
-                "false"
+                "erreur"
             ]
         },
         {
             "inputs": [
                 "**a",
+                "1",
                 "a"
             ],
             "name": "Double operateur",
             "outputs": [
-                "false"
+                "erreur"
             ]
         },
         {
             "inputs": [
                 "a*(abc)",
-                "a"
-            ],
-            "name": "* aucun",
-            "outputs": [
-                "true"
-            ]
-        },
-        {
-            "inputs": [
-                "a*(abc)",
+                "4",
+                "a",
+                "aab",
+                "aabc",
                 "aabcabc"
             ],
-            "name": "* multiple",
+            "name": "*",
             "outputs": [
-                "true"
+                "a",
+                "aabc",
+                "aabcabc"
             ]
         },
         {
             "inputs": [
                 "a?(abc)",
-                "a"
+                "4",
+                "a",
+                "aabc",
+                "abc",
+                "aabcabc"
             ],
-            "name": "? aucun",
+            "name": "?",
             "outputs": [
-                "true"
-            ]
-        },
-        {
-            "inputs": [
-                "a?(abc)",
+                "a",
                 "aabc"
-            ],
-            "name": "? un",
-            "outputs": [
-                "true"
-            ]
-        },
-        {
-            "inputs": [
-                "a?(abc)",
-                "aabcabc"
-            ],
-            "name": "? multiple",
-            "outputs": [
-                "false"
             ]
         },
         {
             "inputs": [
                 "a+(abc)",
-                "aabc"
-            ],
-            "name": "+ un",
-            "outputs": [
-                "true"
-            ]
-        },
-        {
-            "inputs": [
-                "a+(abc)",
-                "aabcabc"
-            ],
-            "name": "+ multiple",
-            "outputs": [
-                "true"
-            ]
-        },
-        {
-            "inputs": [
-                "a+(abc)",
+                "3",
+                "aabc",
+                "aabcabc",
                 "a"
             ],
-            "name": "+ zéro",
+            "name": "+",
             "outputs": [
-                "false"
+                "aabc",
+                "aabcabc"
             ]
         },
         {
             "inputs": [
                 "+(bc?a*(bb?(dd)b))",
-                "bcbbbbbbbca"
+                "2",
+                "bcbbbbbbbca",
+                "bcbbbbbbbcaa"
             ],
             "name": "Complexe",
             "outputs": [
-                "true"
+                "bcbbbbbbbca"
             ]
         },
         {
             "inputs": [
                 "+a+",
+                "1",
                 "bcbbbbbbbca"
             ],
             "name": "Modificateur superflu",
             "outputs": [
-                "false"
+                "erreur"
             ]
         }
     ],
