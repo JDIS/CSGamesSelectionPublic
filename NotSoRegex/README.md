@@ -4,7 +4,7 @@
 
 Ce défi vaut beaucoup de points, mais peut être **très** long à compléter. Il
 vous est conseillé de vous assurer que vous comprenez bien le problème avant d'essayer de le compléter. Par contre, il est possible d'aller chercher
-quelques points rapidement sans tout compléter
+quelques points rapidement sans tout compléter.
 
 Votre collègue aimerait pouvoir télécharger l'Internet (oui oui, au complet!) pour être capable d'y
 trouver tous les numéros de cartes de crédit. Pour ce faire, il vous
@@ -12,9 +12,9 @@ demande de produire un programme étant capable de trouver des chaînes de
 caractères suivant un patron donné. Il ne veut pas que vous utilisiez des méthodes
 utilisant des expressions régulières (aussi connues sous le nom familier _regex_) puisque ces dernières sont trop lentes pour pouvoir interpréter tout l'Internet.
 
-La première ligne sera l'expression, la deuxième ligne sera le nombre de chaines (disons n) et les n prochaines lignes seront des chaines à tester.
+La première ligne sera l'expression, la deuxième ligne sera le nombre de chaînes (disons n) et les n prochaines lignes seront des chaînes à tester.
 
-En sortie, vous ne devez que retourner les chaines qui sont valides pour l'expression donnée.
+En sortie, vous ne devez que retourner les chaînes qui sont valides pour l'expression donnée.
 
 Par exemple,
 
@@ -30,7 +30,7 @@ Et vous devrez alors écrire sur la sortie standard
 a
 ```
 
-Note: si l'expression contient une erreur, vous devez retourner `erreur` sur une seule ligne.
+Note: si l'expression contient une erreur, vous devez retourner `erreur` sur une seule ligne, et ce, peu importe le nombre de chaînes qu'il vous est demandé de tester.
 
 Le code de ce numéro sera vérifié par les organisateurs pour assurer qu'aucune regex ou
 technique équivalente n'ont été utilisées. En cas de doute, venez nous voir.
