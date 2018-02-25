@@ -1,31 +1,34 @@
 # Doux et réconfortant
-En un dimanche matin pluvieux, vous décidez d'étudier par ingénierie inverse le fonctionnement de votre application de messagerie préférée et découverez que son développeur a eu l'_excellente_ idée de créer son propre protocole d'échange de clefs. 
+En un dimanche matin pluvieux, un bon ami vous met au défi de trouver ses nombres secrets à partir des résultats du script suivant.
 
-Ce protocole est en fait une variante du protocole Diffie-Hellman sur le corps fini
-`GF(2^64) = GF(2)[x]/(x^64 + x^33 + x^30 + x^26 + x^25 + x^24 + x^23 + x^22 + x^21 + x^20 + x^18 + x^13 + x^12 + x^11 + x^10 + x^7 + x^5 + x^4 + x^2 + x + 1)`. De plus, le générateur `x`, ou, `0000000000000000000000000000000000000000000000000000000000000010` sous forme binaire, est utilisé.
+```
+from secrets import secret
 
-Vous songez d'abord à paralléliser le problème sur votre CPU à 500 coeurs avec une attaque de type [_meet-in-the-middle_](https://en.wikipedia.org/wiki/Meet-in-the-middle_attack). Malheureusement, vous vous réveillez en sursaut et réalisez que vous êtes en fait pauvre.
+p = 31525197391593473
+g = 2187
+print(pow(g, secret, p))
+```
 
-Pas de CPU à 500 coeurs pour vous.
+Comme `p-1` n'est pas si grand vous songez d'abord à effectuer une attaque de type [_meet-in-the-middle_](https://en.wikipedia.org/wiki/Meet-in-the-middle_attack). Selon un calcul rapide 288 Go en mémoire vive et le tour joué. Malheureusement, vous vous réveillez en sursaut et réalisez que vous êtes en fait pauvre.
 
-Ne baissant pas les bras, vous poursuivez votre analyse et êtes heureux de constater que l'ordre de ce générateur est `2^64`, soit un nombre doux ([_smooth number_](https://en.wikipedia.org/wiki/Smooth_number)).
+Ne baissant pas les bras, vous poursuivez votre analyse et êtes heureux de constater que l'ordre de ce générateur est `2^52`, soit un nombre doux ([_smooth number_](https://en.wikipedia.org/wiki/Smooth_number)).
 
 ## Règles
-Il faut ici calculer le logarithme discret demandé, c'est-à-dire trouver la valeur entière `t` dans l'expression `A^t = B`, où `A = x` et `B` appartient à `GF(2^64)`.
+Il faut ici calculer le logarithme discret demandé, c'est-à-dire trouver la valeur entière `t` dans l'expression `g^t = h`, où t appartient à l'intervalle `[0, 2^52-1]`.
 
 ## Interaction avec la plateforme
 ### Inputs
-**Ligne 1**: Polynôme (B) sous forme binaire de 64 bits
+**Ligne 1**: h le résultat de la mise à la puissance
 
 ### Output
-Solution du logarithme discret (t) en base 10
+t la solution du logarithme discret
 
 ### Exemple
 **Input**
 ```
-1000000010000000000001000001011000000011100000000001000010000010
+4782969
 ```
 **Output**
 ```
-1613577258690797637
+2
 ```
